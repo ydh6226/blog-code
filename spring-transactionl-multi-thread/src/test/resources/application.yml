@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:p6spy:h2:tcp://localhost/~/test
+    username: sa
+    password:
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    hikari:
+      maximum-pool-size: 100
+
+
+mybatis:
+  mapper-locations: mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+#logging:
+#  level:
+#    com.study.repository.NumberRepository: debug
+
+#
+#logging:
+#  level:
+#    com.zaxxer.hikari.HikariConfig: DEBUG
+#    com.zaxxer.hikari: TRACE
